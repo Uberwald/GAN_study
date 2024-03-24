@@ -27,6 +27,34 @@
   <figcaption>Картинка 1</figcaption>
 </figure>
 
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/2.png"
+  alt="Картинка 2">
+  <figcaption>Картинка 2</figcaption>
+</figure>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/3.png"
+  alt="Картинка 3">
+  <figcaption>Картинка 3</figcaption>
+</figure>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/4.png"
+  alt="Картинка 4">
+  <figcaption>Картинка 4</figcaption>
+</figure>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/5.png"
+  alt="Картинка 5">
+  <figcaption>Картинка 5</figcaption>
+</figure>
+
 
 
 
