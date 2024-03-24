@@ -19,7 +19,12 @@
 
 Произведение всех вероятностей: 0.0004337453914552157   
 
-## 1.1.2.
+## 1.1.2.  
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/Uberwald/GAN_study/blob/main/HW1/experiment1_loss.jpg)
+
+
+
+
 
 ## 1.2. Детекция протекающих лунок   
 Использовался датасет из задания   
