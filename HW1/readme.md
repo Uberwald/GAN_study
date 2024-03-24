@@ -20,7 +20,12 @@
 Произведение всех вероятностей: 0.0004337453914552157   
 
 ## 1.1.2.  
-![Picture 1](https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/1.png)
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/1.png"
+  alt="Картинка 1">
+  <figcaption>MDN Logo</figcaption>
+</figure>
 
 
 
