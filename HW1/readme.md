@@ -88,5 +88,26 @@
 
 #### Эксперимент 2
 Цель эксперимента: получить классификатор, опираясь на полученную модель и среднее значение по выборке proliv.   
-Идея эксперимента: обучать модель 300 эпох на датасете train, получить среднее значение по proliv и сделать классификатор для test, давая класс 1 всем картинкам, MSE которых больше среднего по proliv.
+Идея эксперимента: обучать модель 300 эпох на датасете train, получить среднее значение по proliv и сделать классификатор для test, давая класс 1 всем картинкам, MSE которых больше среднего по proliv.   
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.2.%20Experiment%202/metrics300.jpg"
+  alt="">
+  <figcaption>График потерь за 300 эпох</figcaption>
+</figure>   
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.2.%20Experiment%202/MSE_train.png"
+  alt="">
+  <figcaption>График MSE для датасета train. Среднее значение: 0.00040680813253857195</figcaption>
+</figure>  
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.2.%20Experiment%202/MSE_proliv.png"
+  alt="">
+  <figcaption>График MSE для датасета proliv. Среднее значение: 0.0018871622160077095</figcaption>
+</figure>  
 
