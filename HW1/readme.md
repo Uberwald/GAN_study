@@ -24,7 +24,7 @@
   <img
   src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/1.png"
   alt="Картинка 1">
-  <figcaption>MDN Logo</figcaption>
+  <figcaption>Картинка 1</figcaption>
 </figure>
 
 
