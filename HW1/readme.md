@@ -46,6 +46,7 @@ class CSPupBlock(nn.Module):
 
         out = out_a + out_b
         return out
+```
 
 
 ## 1.1.2.   
