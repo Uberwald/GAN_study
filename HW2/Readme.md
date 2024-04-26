@@ -81,9 +81,16 @@ class Generator(nn.Module):
 <figure>
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%201/Exp1.jpg"
-  alt="График потерь для 1200 эпох">
-  <figcaption>График потерь по steps (у меня не получилось получить по эпохам), 1200 эпох. Можно заметить, что обучение можно было окончить значительно раньше</figcaption>
+  alt="">
 </figure>   
+
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%201/Exp1_results.jpg"
+  alt="">
+  <figcaption>Наблюдается mode collapse</figcaption>
+</figure>  
 
 
 #### Эксперимент 2
