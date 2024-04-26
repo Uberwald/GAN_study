@@ -1,23 +1,52 @@
-# ДЗ 1. Байесовская генерация и автоэнкодеры   
-## 1.1.1. Байесовский генератор стилей   
-Использовался датасет из задания   
-Целью первой части работы являлось сделать генератор стилей, основываясь на данных с количеством возможных элементов. Нужно было выписать вероятности каждого элемента одежды и общую вероятность стиля.   
+# ДЗ 2. Имплементация GAN  
 
-Выбранные стили:   
+Использовался датасет из Kaggle [jessicali9530/celeba-dataset ](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) 
+Целью первой части работы являлось сделать генератор лиц, на основе GAN с имплементированным CSPup блоком. 
 
-короткая прямые   
+## 1. Импелементировать CSPup блок
 
-черный   
+'''
+class CSPupBlock(nn.Module):
+    def __init__(self, in_channels, out_channels, ct_pad):
+        super(CSPupBlock, self).__init__()
 
-солнцезащитные очки   
+        # Половина каналов для каждого пути
+        mid_channels = in_channels // 2
 
-комбинезон   
+        # Путь A
+        self.deconv_a = nn.ConvTranspose2d(mid_channels, out_channels, 4, 2, ct_pad)
+        self.bn_a = nn.BatchNorm2d(out_channels)
 
-белый   
+        # Путь B
+        self.conv1_b = nn.Conv2d(mid_channels, mid_channels, 3, stride=1, padding=1)
+        self.bn1_b = nn.BatchNorm2d(mid_channels)
+        self.relu1_b = nn.ReLU()
+        self.deconv_b = nn.ConvTranspose2d(mid_channels, out_channels, 4, 2, ct_pad)
+        self.bn2_b = nn.BatchNorm2d(out_channels)
 
-Вероятности: [0.21052631578947367, 0.14285714285714285, 0.33962264150943394, 0.35185185185185186, 0.1206896551724138]   
+        self.conv3_b = nn.Conv2d(out_channels, out_channels, 3, stride=1, padding=1)
+        self.bn3_b = nn.BatchNorm2d(out_channels)
+        self.relu3_b = nn.ReLU()
+        self.conv3_b_final = nn.Conv2d(out_channels, out_channels, 3, stride=1, padding=1)
+        self.bn_final_b = nn.BatchNorm2d(out_channels)
 
-Произведение всех вероятностей: 0.0004337453914552157   
+    def forward(self, x):
+        x1, x2 = torch.chunk(x, 2, dim=1)
+
+        # Путь A
+        out_a = self.bn_a(self.deconv_a(x1))
+
+        # Путь B
+        x2 = self.bn1_b(self.conv1_b(x2))
+        x2 = self.relu1_b(x2)
+        x2 = self.bn2_b(self.deconv_b(x2))
+        x2 = self.bn3_b(self.conv3_b(x2))
+        x2 = self.relu3_b(x2)
+        out_b = self.bn_final_b(self.conv3_b_final(x2))
+
+        out = out_a + out_b
+        return out
+'''
 
 ## 1.1.2.   
 Картинки получились очень похожими, но если сравнивать попиксельно - они разные. Схожесть обуславливается относительно высоким разрешением, если бы их размеры были 16 на 16, то итог был бы визуально более разнообразным.   
