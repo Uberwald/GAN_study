@@ -85,20 +85,6 @@ class Generator(nn.Module):
   <figcaption>График потерь по steps (у меня не получилось получить по эпохам), 1200 эпох. Можно заметить, что обучение можно было окончить значительно раньше</figcaption>
 </figure>   
 
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.%20Experiment%201/experiment1_metrics.jpg"
-  alt="График потерь для 1200 эпох">
-  <figcaption>Метрики</figcaption>
-</figure>   
-
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.%20Experiment%201/experiment1_results.jpg"
-  alt="">
-  <figcaption>Результаты работы CVAE</figcaption>
-</figure>
-
 
 #### Эксперимент 2
 Цель эксперимента: получить классификатор, опираясь на полученную модель и среднее значение по выборке proliv.   
