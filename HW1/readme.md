@@ -5,7 +5,7 @@
 
 ## 1. Импелементировать CSPup блок
 
-'''   
+```python
 class CSPupBlock(nn.Module):
     def __init__(self, in_channels, out_channels, ct_pad):
         super(CSPupBlock, self).__init__()
@@ -45,8 +45,8 @@ class CSPupBlock(nn.Module):
         out_b = self.bn_final_b(self.conv3_b_final(x2))
 
         out = out_a + out_b
-        return out   
-'''
+        return out
+
 
 ## 1.1.2.   
 Картинки получились очень похожими, но если сравнивать попиксельно - они разные. Схожесть обуславливается относительно высоким разрешением, если бы их размеры были 16 на 16, то итог был бы визуально более разнообразным.   
