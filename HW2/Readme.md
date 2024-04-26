@@ -80,7 +80,7 @@ class Generator(nn.Module):
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.%20Experiment%201/experiment1_loss.jpg"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%201/Exp1.jpg"
   alt="График потерь для 1200 эпох">
   <figcaption>График потерь по steps (у меня не получилось получить по эпохам), 1200 эпох. Можно заметить, что обучение можно было окончить значительно раньше</figcaption>
 </figure>   
