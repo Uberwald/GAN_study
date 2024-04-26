@@ -5,7 +5,7 @@
 
 ## 1. Импелементировать CSPup блок
 
-'''
+'''   
 class CSPupBlock(nn.Module):
     def __init__(self, in_channels, out_channels, ct_pad):
         super(CSPupBlock, self).__init__()
@@ -45,7 +45,7 @@ class CSPupBlock(nn.Module):
         out_b = self.bn_final_b(self.conv3_b_final(x2))
 
         out = out_a + out_b
-        return out
+        return out   
 '''
 
 ## 1.1.2.   
