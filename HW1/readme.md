@@ -49,44 +49,25 @@ class CSPupBlock(nn.Module):
 ```
 
 
-## 1.1.2.   
-Картинки получились очень похожими, но если сравнивать попиксельно - они разные. Схожесть обуславливается относительно высоким разрешением, если бы их размеры были 16 на 16, то итог был бы визуально более разнообразным.   
+## 2. Имплементировать генератор GAN по заданной архитектурной схеме   
 
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/1.png"
-  alt="Картинка 1">
-  <figcaption>Картинка 1</figcaption>
-</figure>
+```python
+class Generator(nn.Module):
+    def __init__(self, ngpu):
+        super(Generator, self).__init__()
+        self.ngpu = ngpu
+        self.main = nn.Sequential(
+            CSPupBlock(100, 512, 0), 
+            CSPupBlock(512, 256, 1),
+            CSPupBlock(256, 128, 1),
+            CSPupBlock(128, 64, 1),
+            CSPupBlock(64, 3, 1),  
+            nn.Tanh()
+        )
 
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/2.png"
-  alt="Картинка 2">
-  <figcaption>Картинка 2</figcaption>
-</figure>
-
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/3.png"
-  alt="Картинка 3">
-  <figcaption>Картинка 3</figcaption>
-</figure>
-
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/4.png"
-  alt="Картинка 4">
-  <figcaption>Картинка 4</figcaption>
-</figure>
-
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/1.2.Picture/5.png"
-  alt="Картинка 5">
-  <figcaption>Картинка 5</figcaption>
-</figure>
-
+    def forward(self, input):
+        return self.main(input)
+```
 
 ## 1.2. Детекция протекающих лунок   
 Использовался датасет из задания   
