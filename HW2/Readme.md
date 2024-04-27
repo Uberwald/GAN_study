@@ -99,7 +99,7 @@ class Generator(nn.Module):
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.2.%20Experiment%202/metrics300.jpg"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%202/Exp2.jpg"
   alt="">
   <figcaption>График потерь за 300 эпох</figcaption>
 </figure>   
