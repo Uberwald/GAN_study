@@ -97,8 +97,6 @@ class Generator(nn.Module):
 Цель эксперимента: улучшить GAN
 Идея эксперимента: добавив ResNet в дискриминатор 
 ```python
-import torch.nn as nn
-
 class ResidualBlock(nn.Module):
     def __init__(self, in_channels, out_channels, stride=1):
         super(ResidualBlock, self).__init__()
