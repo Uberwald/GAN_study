@@ -155,36 +155,17 @@ class Discriminator(nn.Module):
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%202/Exp2.jpg"
   alt="">
-  <figcaption>График потерь за 300 эпох</figcaption>
+  <figcaption></figcaption>
 </figure>   
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.2.%20Experiment%202/MSE_train.png"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%202/Exp2_results.jpg"
   alt="">
-  <figcaption>График MSE для датасета train. Среднее значение: 0.00040680813253857195</figcaption>
+  <figcaption></figcaption>
 </figure>  
 
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.2.%20Experiment%202/MSE_proliv.png"
-  alt="">
-  <figcaption>График MSE для датасета proliv. Среднее значение: 0.0018871622160077095</figcaption>
-</figure> 
 
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.2.%20Experiment%202/MSE_test.png"
-  alt="">
-  <figcaption>График MSE для датасета test Среднее значение: 0.0013879516627639532</figcaption>
-</figure>  
-
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/main/HW1/2.2.%20Experiment%202/error%20matrix.jpg"
-  alt="">
-  <figcaption>Матрица ошибок</figcaption>
-</figure>   
 
 # Выводы:   
 1) Модель, основанная на свёртках обучается довольно быстро, даже 300 эпох много. В связи с тем, что графики не по эпохам, а по steps, сложно указать точное значение, но примерно 50 эпох должно быть достаточно для обучения модели.
