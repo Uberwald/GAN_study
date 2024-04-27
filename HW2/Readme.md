@@ -96,6 +96,62 @@ class Generator(nn.Module):
 #### Эксперимент 2
 Цель эксперимента: улучшить GAN
 Идея эксперимента: добавив ResNet в дискриминатор 
+```python
+import torch.nn as nn
+
+class ResidualBlock(nn.Module):
+    def __init__(self, in_channels, out_channels, stride=1):
+        super(ResidualBlock, self).__init__()
+        self.conv1 = nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=stride, padding=1, bias=False)
+        self.bn1 = nn.BatchNorm2d(out_channels)
+        self.relu = nn.LeakyReLU(0.2, inplace=True)
+        self.conv2 = nn.Conv2d(out_channels, out_channels, kernel_size=3, stride=1, padding=1, bias=False)
+        self.bn2 = nn.BatchNorm2d(out_channels)
+
+        self.skip = nn.Sequential()
+        if stride != 1 or in_channels != out_channels:
+            self.skip = nn.Sequential(
+                nn.Conv2d(in_channels, out_channels, kernel_size=1, stride=stride, bias=False),
+                nn.BatchNorm2d(out_channels)
+            )
+
+    def forward(self, x):
+        out = self.conv1(x)
+        out = self.bn1(out)
+        out = self.relu(out)
+        out = self.conv2(out)
+        out = self.bn2(out)
+        out += self.skip(x)
+        out = self.relu(out)
+        return out
+
+class Discriminator(nn.Module):
+    def __init__(self, ngpu):
+        super(Discriminator, self).__init__()
+        self.ngpu = ngpu
+        self.main = nn.Sequential(
+            # Initial convolution layer
+            nn.Conv2d(nc, ndf, 4, 2, 1, bias=False),
+            nn.LeakyReLU(0.2, inplace=True),
+            # state size. ``(ndf) x 32 x 32``
+            ResidualBlock(ndf, ndf * 2, stride=2),
+            # state size. ``(ndf*2) x 16 x 16``
+            ResidualBlock(ndf * 2, ndf * 4, stride=2),
+            # state size. ``(ndf*4) x 8 x 8``
+            ResidualBlock(ndf * 4, ndf * 8, stride=2),
+            # state size. ``(ndf*8) x 4 x 4``
+            ResidualBlock(ndf * 8, ndf * 16, stride=2),
+            # state size. ``(ndf*16) x 2 x 2``
+            nn.Conv2d(ndf * 16, 1, 2, 1, 0, bias=False),  # Изменен размер ядра на 2
+            nn.Sigmoid()
+        )
+
+    def forward(self, input):
+        return self.main(input)
+```
+
+
+
 
 <figure>
   <img
