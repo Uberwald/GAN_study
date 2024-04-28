@@ -165,6 +165,8 @@ class Discriminator(nn.Module):
   <figcaption></figcaption>
 </figure>  
 
+#### Эксперимент 3
+
 
 
 # Выводы:   
