@@ -165,7 +165,23 @@ class Discriminator(nn.Module):
   <figcaption></figcaption>
 </figure>  
 
-#### Эксперимент 3
+#### Эксперимент 3   
+В генератор и дисриминатор были имплементированы spectral norm во все Conv и ConvTranspose слои. Эксперимент не очень удачный
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%203/Exp3.jpg"
+  alt="">
+  <figcaption></figcaption>
+</figure> 
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%203/Exp3.jpg"
+  alt="">
+  <figcaption></figcaption>
+</figure>  
+
 
 
 
