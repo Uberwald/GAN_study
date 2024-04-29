@@ -170,14 +170,14 @@ class Discriminator(nn.Module):
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%204/Exp4.jpg"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%203/Exp3.jpg"
   alt="">
   <figcaption></figcaption>
 </figure> 
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%204/Exp3_result4.jpg"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%203/Exp3_result3.jpg"
   alt="">
   <figcaption></figcaption>
 </figure>  
