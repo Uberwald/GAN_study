@@ -170,14 +170,14 @@ class Discriminator(nn.Module):
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%203/Exp3.jpg"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%204/Exp4.jpg"
   alt="">
   <figcaption></figcaption>
 </figure> 
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%203/Exp3_results.jpg"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%204/Exp3_result4.jpg"
   alt="">
   <figcaption></figcaption>
 </figure>  
@@ -186,6 +186,7 @@ class Discriminator(nn.Module):
 
 
 
+https://github.com/Uberwald/GAN_study/blob/homework_2/HW2/Experiment%204/Exp4_results.jpg
 
 # Выводы:   
 1) Само по себе имплементирование CSPup блока на улучшило результаты DCGAN, а даже ухудшило. Поэтому применение такого инструмента требует тонкой настройки гиперпараметров и применения других инструментов для улучшения результата.
