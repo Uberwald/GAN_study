@@ -1,7 +1,9 @@
 # ДЗ 2. Имплементация GAN  
 
 Использовался датасет из Kaggle [jessicali9530/celeba-dataset ](https://www.kaggle.com/datasets/jessicali9530/celeba-dataset) 
-Целью первой части работы являлось сделать генератор лиц, на основе GAN с имплементированным CSPup блоком. 
+Целью первой части работы являлось сделать генератор лиц, на основе GAN с имплементированным CSPup блоком.    
+
+   Блокнот слишком много весил, поэтому вот ссылка: https://colab.research.google.com/drive/1Uo_ZuLBUI7JiixcnRdMP86rX9xxJuFLE?usp=sharing
 
 ## 1. Импелементировать CSPup блок
 
