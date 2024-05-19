@@ -70,24 +70,24 @@ print(loss.item())
 
 Брались векторы [8,9,12,13,14,15,16,17] из скрытого пространства. Вектор 11 отвечал за цвет глаз, я его сохранил.
 
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_3/HW3/Pictures/van_gog.jpg"
+  alt="">
+</figure> 
 
-```python
-class Generator(nn.Module):
-    def __init__(self, ngpu):
-        super(Generator, self).__init__()
-        self.ngpu = ngpu
-        self.main = nn.Sequential(
-            CSPupBlock(100, 512, 0), 
-            CSPupBlock(512, 256, 1),
-            CSPupBlock(256, 128, 1),
-            CSPupBlock(128, 64, 1),
-            CSPupBlock(64, 3, 1),  
-            nn.Tanh()
-        )
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_3/HW3/Pictures/malevich.jpg"
+  alt="">
+</figure>
 
-    def forward(self, input):
-        return self.main(input)
-```
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_3/HW3/Pictures/da_vinchi.jpg"
+  alt="">
+</figure>
+
 
 ## 3. Обучение GAN и получение сходимости
 
