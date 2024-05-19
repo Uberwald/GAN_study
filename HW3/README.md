@@ -5,10 +5,16 @@
 
 ## 1. Найти проекции изображений в пространстве StyleGAN
 
-В первом столбце оригинал
+В первом столбце оригинал   
 Во втором представлен обычный результат поиска в пространстве.   
 В третьем результат использования энкодера e4e_ffhq_encode.pt.   
 В четвертом картинки, являющиеся улучшением полученных с помощью энкодера: был произведен поиск вектора, внедерен scheduler.
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_3/HW3/Pictures/Celebs.jpg"
+  alt="">
+</figure>  
 
 ```python
 from torch.optim.lr_scheduler import StepLR
@@ -58,11 +64,7 @@ print(loss.item())
 ```
 
 
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_3/HW3/Pictures/Celebs.jpg"
-  alt="">
-</figure>  
+
 
 ## 2. Имплементировать генератор GAN по заданной архитектурной схеме   
 
