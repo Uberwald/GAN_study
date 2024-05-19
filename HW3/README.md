@@ -57,6 +57,12 @@ print(loss.item())
 ```
 
 
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_3/HW3/Pictures/Celebs.jpg"
+  alt="">
+</figure>  
+
 ## 2. Имплементировать генератор GAN по заданной архитектурной схеме   
 
 ```python
