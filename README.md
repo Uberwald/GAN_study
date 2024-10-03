@@ -42,7 +42,7 @@
 Дальше была обучена Lora на тот же инстанс промт. Были выбраны параметры rank 4, 32 и 128.
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_lora_rank4_1.png"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_lora_rank4_2.png"
   alt="Lora rank 4">
   <div align="center"><figcaption>Lora rank 4</figcaption></div>
 </figure>  
@@ -51,7 +51,7 @@
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_lora_rank32_1.png"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_lora_rank32_2.png"
   alt="Lora rank 32">
   <div align="center"><figcaption>Lora rank 32</figcaption></div>
 </figure>  
@@ -60,7 +60,7 @@
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_lora_rank128_1.png"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_lora_rank128_2.png"
   alt="Lora rank 128">
   <div align="center"><figcaption>Lora rank 128</figcaption></div>
 </figure>  
