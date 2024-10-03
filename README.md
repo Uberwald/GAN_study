@@ -40,18 +40,29 @@
 
 ## 2. Обучить Lora модель и сравнить с Unet
 Дальше была обучена Lora на тот же инстанс промт. Были выбраны параметры rank 4, 32 и 128.
-
-
 <figure>
   <img
-  src="https://developer.mozilla.org/static/img/favicon144.png"
-  alt="The beautiful MDN logo.">
-  <figcaption>MDN Logo</figcaption>
-</figure>
-
-
-<figure>
-  <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_4/DB_1.png"
-  alt="">
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_lora_rank4_1.png"
+  alt="Lora rank 4">
+  <div align="center"><figcaption>Lora rank 4</figcaption></div>
 </figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_lora_rank32_1.png"
+  alt="Lora rank 32">
+  <div align="center"><figcaption>Lora rank 32</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_lora_rank128_1.png"
+  alt="Lora rank 128">
+  <div align="center"><figcaption>Lora rank 128</figcaption></div>
+</figure>  
+
+<br><br>
