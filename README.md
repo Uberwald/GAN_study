@@ -7,7 +7,11 @@
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/Lora_rank4.png"
   alt="Basic CyberRealistic">
   <figcaption>Basic CyberRealistic</figcaption>
-</figure>  
+</figure>   
+
+   
+
+
 
 <figure>
   <img
