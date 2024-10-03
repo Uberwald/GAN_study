@@ -6,24 +6,28 @@
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/Lora_rank4.png"
   alt="Basic CyberRealistic">
+  <figcaption>Basic CyberRealistic</figcaption>
 </figure>  
 
 <figure>
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_1.png"
   alt="CyberRealistic + Dreambooth">
+  <figcaption>CyberRealistic + Dreambooth</figcaption>
 </figure> 
 
 <figure>
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/Lora_rank4_2.png"
   alt="Basic CyberRealistic">
+  <figcaption>Basic CyberRealistic</figcaption>
 </figure>  
 
 <figure>
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_2.png"
   alt="CyberRealistic + Dreambooth">
+  <figcaption>CyberRealistic + Dreambooth</figcaption>
 </figure>  
 
 ## 2. Обучить Lora модель и сравнить с Unet
