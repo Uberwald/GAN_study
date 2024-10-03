@@ -88,3 +88,21 @@
 
 <br><br>
 
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/kitchen.jpg"
+  alt="">
+  <div align="center"><figcaption>kitchen, only dreambooth</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/kitchenLora.jpg"
+  alt="">
+  <div align="center"><figcaption>kitchen, db + lora rank 128</figcaption></div>
+</figure>  
+
+<br><br>
+
