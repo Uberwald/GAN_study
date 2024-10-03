@@ -4,6 +4,6 @@
 
 <figure>
   <img
-  src="https://github.com/Uberwald/GAN_study/blob/homework_3/HW3/Pictures/Celebs.jpg"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/DB_1.png"
   alt="">
 </figure>  
