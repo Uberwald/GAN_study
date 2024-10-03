@@ -178,3 +178,40 @@
 </figure>  
 
 <br><br>
+
+##3. ControlNet
+Была взята возможность ControlNet извлекать позы из изображений. Здесь, в качестве примера, была использована картина "Девушка с жемчужной серёжкой" за автороством Йоханееса Вермеера.
+
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/Orig_paint.jpeg"
+  alt="">
+  <div align="center"><figcaption>Оригинал</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/monica_pint.png"
+  alt="">
+  <div align="center"><figcaption>Вариант 1</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/monica_pint2.png"
+  alt="">
+  <div align="center"><figcaption>Вариант 2</figcaption></div>
+</figure>  
+
+<br><br>
+
+#Вывод
+1. Заметно, что если в обучающей выборке есть хотя бы одно черно-белое изоражение, при генерации тоже может получиться чб
+2. Несмотря на то, что в обучающей выборке почти все фотографии ещё молодой актрисы, модель, почему-то, особо подчеркнула черты старения
+3. Добавление Lora лишь немного улучшило исходный результат. Так или иначе, но слишком высокий rank сделал результат хуже, излишне подчеркнув некоторые черты лица и, например, испортив уши.
+4. При использовании ControlNet я столькнулся с проблемой генерации глаз на изображениях. Результат немного улучшился, добавлением в промт detailed bright eyes, однако всё ещё не идеально. Также не получилось сделать тёмный фон
