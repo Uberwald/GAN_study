@@ -2,42 +2,40 @@
 ## 1. Собрать датасет и обучить Unet
 В качестве инференс промта использовался "a photo of sks woman face". Ниже представлены результаты модели CyberRealistic и файн-тюн Dreambooth на фотографиях актрисы Моники Белуччи.  
 Промт для генерируемых картинок: "portrait of sks woman face, on the street, lights, midnight, NY, standing, 4K, raw, hrd, hd, high quality, realism, sharp focus,  beautiful eyes, detailed eyes"
-<style>
-  figure {
-    margin-bottom: 20px; /* Добавляем отступ между фигурами */
-  }
-  figcaption {
-    text-align: center; /* Центрируем подпись */
-  }
-</style>
-
 <figure>
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/Lora_rank4.png"
   alt="Basic CyberRealistic">
-  <figcaption>Basic CyberRealistic</figcaption>
+  <div align="center"><figcaption>Basic CyberRealistic</figcaption></div>
 </figure>   
+
+<br><br>
 
 <figure>
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_1.png"
   alt="CyberRealistic + Dreambooth">
-  <figcaption>CyberRealistic + Dreambooth</figcaption>
+  <div align="center"><figcaption>CyberRealistic + Dreambooth</figcaption></div>
 </figure> 
+
+<br><br>
 
 <figure>
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/Lora_rank4_2.png"
   alt="Basic CyberRealistic">
-  <figcaption>Basic CyberRealistic</figcaption>
+  <div align="center"><figcaption>Basic CyberRealistic</figcaption></div>
 </figure>  
+
+<br><br>
 
 <figure>
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/DB_2.png"
   alt="CyberRealistic + Dreambooth">
-  <figcaption>CyberRealistic + Dreambooth</figcaption>
+  <div align="center"><figcaption>CyberRealistic + Dreambooth</figcaption></div>
 </figure>
+
 
 
 ## 2. Обучить Lora модель и сравнить с Unet
