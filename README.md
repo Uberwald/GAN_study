@@ -70,6 +70,7 @@
 
 
 ###2.1. Генераиция в разном окружении
+Были выбраны несколько локаций: forest, kitchen, office, school, street, truck.
 <figure>
   <img
   src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/forest.jpg"
@@ -106,3 +107,74 @@
 
 <br><br>
 
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/office.jpg"
+  alt="">
+  <div align="center"><figcaption>office, only dreambooth</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/officeLora.jpg"
+  alt="">
+  <div align="center"><figcaption>office, db + lora rank 128</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/school.jpg"
+  alt="">
+  <div align="center"><figcaption>school, only dreambooth</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/schoolLora.jpg"
+  alt="">
+  <div align="center"><figcaption>school, db + lora rank 128</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/street.jpg"
+  alt="">
+  <div align="center"><figcaption>street, only dreambooth</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/streetLora.jpg"
+  alt="">
+  <div align="center"><figcaption>street, db + lora rank 128</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/truck.jpg"
+  alt="">
+  <div align="center"><figcaption>truck, only dreambooth</figcaption></div>
+</figure>  
+
+<br><br>
+
+<figure>
+  <img
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/truckLora.jpg"
+  alt="">
+  <div align="center"><figcaption>truck, db + lora rank 128</figcaption></div>
+</figure>  
+
+<br><br>
