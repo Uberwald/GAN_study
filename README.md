@@ -81,7 +81,7 @@
 
 <figure>
   <img
-  src="[https://github.com/Uberwald/GAN_study/blob/homework_4/results/forest.jpg](https://github.com/Uberwald/GAN_study/blob/homework_4/results/forestLora.jpg)"
+  src="https://github.com/Uberwald/GAN_study/blob/homework_4/results/forestLora.jpg"
   alt="">
   <div align="center"><figcaption>Forest, db + lora rank 128</figcaption></div>
 </figure>  
